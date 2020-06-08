@@ -13,5 +13,71 @@ body {
   --grayish-blue: hsl(229, 7%, 55%);
   --dark-blue: hsl(228, 56%, 26%);
   --very-dark-blue: hsl(229, 57%, 11%);
+  background: url("/images/bg-mobile.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #fff;
+}
+
+.container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.card .files {
+  background-color: var(--dark-blue);
+  padding: 2rem;
+  min-width: 300px;
+  border-top-right-radius: 100px;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+}
+
+.card .files .icons {
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50px)[3];
+      grid-template-columns: repeat(3, 50px);
+  gap: 1rem;
+}
+
+.card .files .icons li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--very-dark-blue);
+  padding: .5rem;
+  border-radius: 10px;
+}
+
+.card .information {
+  background-color: var(--dark-blue);
+  padding: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

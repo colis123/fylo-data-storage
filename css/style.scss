@@ -14,5 +14,53 @@ body {
   --grayish-blue: hsl(229, 7%, 55%);
   --dark-blue: hsl(228, 56%, 26%);
   --very-dark-blue: hsl(229, 57%, 11%);
-  
+  background: url('/images/bg-mobile.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #fff;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  .files {
+    background-color: var(--dark-blue);
+    padding: 2rem;
+    min-width: 300px;
+    border-top-right-radius: 100px;
+    display: grid;
+    gap: 2rem;
+
+    .icons {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(3,50px);
+      gap: 1rem;
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--very-dark-blue);
+        padding: .5rem;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .information {
+    background-color: var(--dark-blue);
+    padding: 2rem;
+  }
 }
