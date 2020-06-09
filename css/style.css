@@ -21,6 +21,10 @@ body {
   color: #fff;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .container {
   height: 100%;
   display: -webkit-box;
@@ -47,6 +51,7 @@ body {
   padding: 2rem;
   min-width: 300px;
   border-top-right-radius: 100px;
+  border-radius: 10px 100px 10px 10px;
   display: -ms-grid;
   display: grid;
   gap: 2rem;
@@ -78,6 +83,50 @@ body {
 
 .card .information {
   background-color: var(--dark-blue);
-  padding: 2rem;
+  padding: 2rem 1.75rem;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: center;
+}
+
+.card .information .slider {
+  background: var(--very-dark-blue);
+  height: 20px;
+  border-radius: 10px;
+}
+
+.card .information .slider .progress {
+  position: relative;
+  top: 2px;
+  left: 2px;
+  width: 80%;
+  height: 15px;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background: linear-gradient(to right, #ffa399, #ff4d97);
+  border-radius: 10px;
+}
+
+.card .information .slider .progress::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 3px;
+  height: 13px;
+  width: 13px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.card .information .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
