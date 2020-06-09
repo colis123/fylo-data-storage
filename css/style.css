@@ -25,6 +25,11 @@ body {
   font-weight: 700;
 }
 
+.large-text {
+  font-size: 32px;
+  font-weight: 700;
+}
+
 .container {
   height: 100%;
   display: -webkit-box;
@@ -44,6 +49,7 @@ body {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   gap: 2rem;
+  position: relative;
 }
 
 .card .files {
@@ -91,6 +97,7 @@ body {
       grid-template-columns: 1fr;
   gap: 1rem;
   text-align: center;
+  position: relative;
 }
 
 .card .information .slider {
@@ -128,5 +135,31 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.card .data-remaining {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  width: 50%;
+  bottom: -30px;
+  left: 25%;
+}
+
+.card .data-remaining .gray-text {
+  color: #727070;
 }
 /*# sourceMappingURL=style.css.map */
