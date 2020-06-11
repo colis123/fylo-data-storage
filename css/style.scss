@@ -47,7 +47,6 @@ body {
   .files {
     background-color: var(--dark-blue);
     padding: 2rem;
-    min-width: 300px;
     border-top-right-radius: 100px;
     border-radius: 10px 100px 10px 10px;
     display: grid;
@@ -131,5 +130,50 @@ body {
     .gray-text {
       color: #727070;
     }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+
+  body {
+    background: url('/images/bg-desktop.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .card {
+    grid-template-areas: 
+    '. . . .'
+    'file . . .'
+    'file info info info'
+    'file info info info';
+    gap: 3rem;
+
+  .files {
+    grid-area: file;
+    min-width: 350px;
+
+    h1 {
+      margin-top: 1.5rem;
+    }
+  }
+  
+  .information {
+    grid-area: info;
+    width: 600px;
+
+    .stats {
+      margin: 0;
+    }
+  }
+
+
+  .stats {
+    margin: 0;
+  }  
+  .data-remaining {
+    display: none;
+  }
+
   }
 }
